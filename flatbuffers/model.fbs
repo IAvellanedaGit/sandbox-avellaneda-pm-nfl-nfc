@@ -1,0 +1,29 @@
+namespace model;
+
+table InitializeRequest {
+    log_level:int;
+}
+
+table StringResponse {
+    output:string;
+    error:string;
+}
+
+table TeamRequest {
+    team:string;
+}
+
+table ListTeamsResponse {
+    teams:[string];
+    error:string;
+}
+
+table BoolResponse {
+    output:bool;
+    error:string;
+}
+
+table IntResponse {
+    output:int;
+    error:string;
+}
